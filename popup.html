@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auto Scroll</title>
+  <title>Auto Page Loader</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Auto Scroll</h1>
+    <h1>Auto Page Loader</h1>
+    <p class="description">Automatically load next page when scrolling to bottom</p>
     <div class="controls">
-      <button id="startBtn" class="btn btn-start">Start Scrolling</button>
-      <button id="stopBtn" class="btn btn-stop" disabled>Stop Scrolling</button>
-    </div>
-    <div class="settings">
-      <label for="speed">Speed:</label>
-      <input type="range" id="speed" min="1" max="10" value="3">
-      <span id="speedValue">3</span>
+      <button id="toggleBtn" class="btn btn-enable">Enable</button>
     </div>
     <div class="status">
-      <span id="statusText">Idle</span>
+      <span id="statusText">Disabled</span>
+    </div>
+    <div class="info">
+      <p>📄 <span id="pageCount">Page 1</span></p>
+      <p class="hint">Scroll down to automatically load more pages</p>
     </div>
   </div>
   <script src="popup.js"></script>

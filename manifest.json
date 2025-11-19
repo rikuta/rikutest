@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Auto Scroll",
+  "name": "Auto Page Loader",
   "version": "1.0.0",
-  "description": "Auto-scroll web pages with easy start/stop control",
+  "description": "Automatically load next page when scrolling to bottom (infinite scroll)",
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ],
   "action": {
     "default_popup": "popup.html",

@@ -17,17 +17,24 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 .controls {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .btn {
@@ -50,21 +57,21 @@ h1 {
   transform: translateY(0);
 }
 
-.btn-start {
+.btn-enable {
   background-color: #48bb78;
   color: white;
 }
 
-.btn-start:hover:not(:disabled) {
+.btn-enable:hover:not(:disabled) {
   background-color: #38a169;
 }
 
-.btn-stop {
+.btn-disable {
   background-color: #f56565;
   color: white;
 }
 
-.btn-stop:hover:not(:disabled) {
+.btn-disable:hover:not(:disabled) {
   background-color: #e53e3e;
 }
 
@@ -73,41 +80,35 @@ h1 {
   cursor: not-allowed;
 }
 
-.settings {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.settings label {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-#speed {
-  flex: 1;
-  cursor: pointer;
-}
-
-#speedValue {
-  font-weight: bold;
-  font-size: 18px;
-  min-width: 20px;
-  text-align: center;
-}
-
 .status {
   text-align: center;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 #statusText {
   font-size: 14px;
+}
+
+.info {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.info p {
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info .hint {
+  font-size: 12px;
+  font-weight: normal;
+  opacity: 0.8;
+  margin-top: 10px;
 }
